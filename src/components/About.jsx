@@ -1,0 +1,109 @@
+import React, { useEffect } from "react";
+import CtaButton from "./CtaButton";
+import img from "../img/about-img.svg";
+import { BsPeople } from "react-icons/bs";
+
+// aos
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
+
+  return (
+    <div className="relative lg:mx-32">
+      {/* Heading */}
+      <h1
+        data-aos="fade-down"
+        className="text-3xl font-semibold text-center text-[#7A6960]"
+      >
+        About Us
+      </h1>
+      <div className="flex justify-center items-center mt-2 mb-10">
+        <div className="bg-orange-600 h-1 w-16 rounded"></div>
+      </div>
+
+      <div className="flex flex-col lg:flex-row items-center lg:gap-10 secondary-font">
+        {/* Image */}
+        <div
+          data-aos="fade-up"
+          className="lg:w-1/2 w-full md:w-3/4 py-16 px-10 md:px-0"
+        >
+          <img className="w-full" src={img} alt="About Aiven Creatives" />
+        </div>
+
+        {/* Text */}
+        <div className="lg:w-1/2 w-full md:w-3/4 px-10 md:p-0">
+          <div data-aos="fade-left">
+            <h1 className="text-[#7A6960] md:text-3xl font-semibold">
+              Aiven Creatives
+            </h1>
+            <p className="text-lg mt-5 text-gray-600 primary-font leading-relaxed">
+              Aiven Creatives is one of the most trusted advertising agencies in
+              Chennai, offering end-to-end support in branding and digital
+              marketing solutions to elevate your brand’s presence. We
+              specialize in delivering impactful campaigns that drive real
+              results.
+            </p>
+          </div>
+
+          {/* Services Section */}
+          <div className="mt-8 space-y-6">
+            {/* Digital Marketing */}
+            <div
+              data-aos="zoom-in"
+              className="flex flex-col lg:flex-row items-center gap-5"
+            >
+              <div className="bg-orange-600 w-fit p-3 md:p-5 rounded text-white">
+                <BsPeople size={"28px"} />
+              </div>
+              <div className="w-full">
+                <h2 className="text-[#7A6960] text-xl font-medium">
+                  Digital Marketing
+                </h2>
+                <p className="text-base text-gray-600 primary-font mt-2">
+                  Social Media Marketing, SEO, Content & Email Marketing, PPC,
+                  Influencer Marketing, Website Development, Graphic & Logo
+                  Design, Video Editing.
+                </p>
+              </div>
+            </div>
+
+            {/* Outdoor Advertising */}
+            <div
+              data-aos="zoom-in"
+              className="flex flex-col lg:flex-row items-center gap-5"
+            >
+              <div className="bg-orange-600 w-fit p-3 md:p-5 rounded text-white">
+                <BsPeople size={"28px"} />
+              </div>
+              <div className="w-full">
+                <h2 className="text-[#7A6960] text-xl font-medium">
+                  Outdoor Advertising
+                </h2>
+                <p className="text-base text-gray-600 primary-font mt-2">
+                  Hoardings, Billboards, Bus Shelters, Mobile Vans, Metro Train
+                  Branding, Barricade Ads, City Cabs & Autos, Traffic Signal &
+                  Lamp Post Ads across Chennai & Tamil Nadu.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Final CTA */}
+          <div className="flex flex-col sm:flex-row items-center gap-10 mt-12">
+          <a href="#contact" className="">
+              <CtaButton name={"Get Started"} />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
