@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import CtaButton from "./CtaButton";
-import logo from "../img/assets/logo1.png"; // update path if needed
+import logo from "../img/assets/logo1.png";
 
 const NavBar = () => {
   const [show, setShow] = useState(false);
@@ -13,13 +13,20 @@ const NavBar = () => {
     setShow(!show);
   };
 
-  // ✅ Scroll handler
+  // ✅ Smooth scroll (NEW)
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setShow(false); // close mobile menu after clicking
+  };
+
+  // ✅ Scroll hide/show navbar
   const handleScroll = () => {
     if (window.scrollY > lastScrollY) {
-      // scrolling down
       setVisible(false);
     } else {
-      // scrolling up
       setVisible(true);
     }
     setLastScrollY(window.scrollY);
@@ -36,7 +43,7 @@ const NavBar = () => {
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      {/* logo */}
+      {/* Logo */}
       <Link
         to="/"
         className="lg:text-3xl text-2xl tracking-wide font-light flex items-center gap-2"
@@ -44,35 +51,83 @@ const NavBar = () => {
         <img src={logo} alt="Logo" className="h-12 w-15 object-contain" />
       </Link>
 
-      {/* desktop menu */}
+      {/* ✅ Desktop Menu */}
       <div className="lg:flex items-center justify-between lg:gap-14 hidden">
         <Link to="/" className="nav-link">Home</Link>
-        <a href="#about" className="nav-link">About</a>
-        <a href="#services" className="nav-link">Services</a>
-        <a href="#portfolio" className="nav-link">Portfolio</a>
+
+        <button onClick={() => scrollToSection("about")} className="nav-link">
+          About
+        </button>
+
+        <button onClick={() => scrollToSection("services")} className="nav-link">
+          Services
+        </button>
+
+        <button onClick={() => scrollToSection("portfolio")} className="nav-link">
+          Portfolio
+        </button>
+
         <Link to="/blog" className="nav-link">Blog</Link>
-        <a href="#contact">
+
+        <button onClick={() => scrollToSection("contact")}>
           <CtaButton name={"Contact"} />
-        </a>
+        </button>
       </div>
 
-      {/* mobile menu button */}
+      {/* Mobile menu button */}
       <div className="lg:hidden">
         <RxHamburgerMenu size={"28px"} onClick={clickHandler} />
       </div>
 
-      {/* mobile dropdown */}
+      {/* ✅ Mobile Dropdown */}
       {show && (
         <div className="absolute z-20 top-[70px] flex flex-col gap-4 text-center w-full left-0 p-5 lg:hidden shadow-xl bg-black/60 text-white backdrop-blur-md transition-all duration-300">
-          <Link to="/" className="nav-link">Home</Link>
-          <a href="#about" className="nav-link">About</a>
-          <a href="#services" className="nav-link">Services</a>
-          <a href="#portfolio" className="nav-link">Portfolio</a>
-          <Link to="/blog" className="nav-link">Blog</Link>
-          <a href="#contact" className="nav-link">Contact</a>
-          <a href="#contact" className="mt-2 flex justify-center items-center">
+          <Link to="/" className="nav-link" onClick={() => setShow(false)}>
+            Home
+          </Link>
+
+          <button
+            onClick={() => scrollToSection("about")}
+            className="nav-link"
+          >
+            About
+          </button>
+
+          <button
+            onClick={() => scrollToSection("services")}
+            className="nav-link"
+          >
+            Services
+          </button>
+
+          <button
+            onClick={() => scrollToSection("portfolio")}
+            className="nav-link"
+          >
+            Portfolio
+          </button>
+
+          <Link
+            to="/blog"
+            className="nav-link"
+            onClick={() => setShow(false)}
+          >
+            Blog
+          </Link>
+
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="nav-link"
+          >
+            Contact
+          </button>
+
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="mt-2 flex justify-center items-center"
+          >
             <CtaButton name={"Get Started"} />
-          </a>
+          </button>
         </div>
       )}
     </div>
