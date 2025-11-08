@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 node_modules
+bash.exe.stackdump
+src/components/Faquestions.jsx
+src/components/Team.jsx    
+src/components/VideoBtn.jsx
