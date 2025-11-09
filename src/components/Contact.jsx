@@ -57,7 +57,7 @@ const Contact = () => {
                 Address
               </h2>
               <p className="text-sm text-slate-800">
-                Thirumangalam, Chennai
+                Anna Nagar West Extension, Chennai
               </p>
             </div>
           </div>
@@ -88,7 +88,7 @@ const Contact = () => {
               <h2 className="lg:text-xl text-[#7A6960] font-semibold">
                 Email Us
               </h2>
-              <p className="text-sm text-slate-800">info@example.com</p>
+              <p className="text-sm text-slate-800">info@aivencreatives.com</p>
             </div>
           </div>
 
@@ -98,7 +98,7 @@ const Contact = () => {
               height="100%"
               src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.50718079399!2d80.17843322491038!3d13.088791226484018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5263faeccace93%3A0x188e67dd62475cab!2sGolden%20Flats%2C%20Mogappair%2C%20Chennai!5e0!3m2!1sen!2sin!4v1757851014514!5m2!1sen!2sin"
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

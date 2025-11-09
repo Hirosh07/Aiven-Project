@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import CtaButton from "./CtaButton";
-import logo from "../img/assets/logo1.png";
+import logo from "../img/assets/logo_AC.jpeg";
 
 const NavBar = () => {
   const [show, setShow] = useState(false);

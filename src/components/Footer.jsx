@@ -4,7 +4,7 @@ import { IoLogoFacebook } from "react-icons/io5";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io";
 // aos
-import logo from "../img/assets/logo.jpg"; 
+import logo from "../img/assets/logo_AC.jpeg"; 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -21,17 +21,16 @@ const Footer = () => {
   return (
     <div className="md:grid grid-cols-4 p-5 md:p-0">
       <div data-aos="fade-right" >
-        <img src={logo} alt="Logo" className="h-8 w-8 object-contain" />
+        <img src={logo} alt="Logo" className="h-12 w-12 object-contain" />
         <h1 className="text-xl font-light mb-3">Aiven-Creatives</h1>
-        <p className="mb-1">Thirumangalam</p>
-        <p className="mb-5">Chennai</p>
+        <p className="mb-1">Anna Nagar, Chennai</p>
 
         <div>
           <p className="font-medium">
             Phone: <span className="font-normal ml-1">+91 1122334455</span>
           </p>
           <p className="font-medium">
-            Email: <span className="font-normal ml-1">info@gmail.com</span>
+            Email: <span className="font-normal ml-1"> info@aivencreatives.com</span>
           </p>
         </div>
       </div>
