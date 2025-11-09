@@ -30,6 +30,7 @@ const Hireus = () => {
   return (
     <div className="">
       <NavBar />
+      <div className="pt-24"></div>
         <h1 className="text-center text-[#7A6960] md:text-5xl text-3xl font-semibold my-10 p-5 md:p-0">Share your idea & we will <br /> turn it into reality!</h1>
       <div className="w-full min-h-screen flex justify-center">
         {/* form */}

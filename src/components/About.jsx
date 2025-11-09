@@ -5,7 +5,7 @@ import { MdWeb } from "react-icons/md";
 import { AiOutlineLineChart } from "react-icons/ai";
 import { GiMegaphone } from "react-icons/gi";  // updated icon
 
-// aos
+// AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -29,10 +29,7 @@ const About = () => {
 
       <div className="flex flex-col lg:flex-row items-center lg:gap-10 secondary-font">
         {/* Image */}
-        <div
-          data-aos="fade-up"
-          className="lg:w-1/2 w-full md:w-3/4 py-16 px-10 md:px-0"
-        >
+        <div data-aos="fade-up" className="lg:w-1/2 w-full md:w-3/4 py-16 px-10 md:px-0">
           <img className="w-full" src={img} alt="About Aiven Creatives" />
         </div>
 
@@ -43,9 +40,9 @@ const About = () => {
               Aiven Creatives
             </h1>
             <p className="text-lg mt-5 text-gray-600 primary-font leading-relaxed">
-              Aiven Creatives is a trusted advertising agency in Chennai,
-              offering complete branding and marketing solutions to elevate
-              your brand’s presence and deliver impactful results.
+              Aiven Creatives is a trusted advertising agency in Chennai, offering
+              complete branding and marketing solutions to elevate your brand’s
+              presence and deliver impactful results.
             </p>
           </div>
 
@@ -64,8 +61,8 @@ const About = () => {
                   Web & Creative Services
                 </h2>
                 <p className="text-base text-gray-600 primary-font mt-2">
-                  Website Development, Graphic & Logo Design, and Video Editing
-                  to craft a strong and memorable brand identity.
+                  Website Development, Graphic & Logo Design, and Video Editing to
+                  craft a strong and memorable brand identity.
                 </p>
               </div>
             </div>
@@ -83,8 +80,8 @@ const About = () => {
                   Digital Marketing
                 </h2>
                 <p className="text-base text-gray-600 primary-font mt-2">
-                  Social Media Marketing, SEO, PPC, Content & Email Marketing,
-                  and Influencer Campaigns to grow your online presence.
+                  Social Media Marketing, SEO, PPC, Content & Email Marketing, and
+                  Influencer Campaigns to grow your online presence.
                 </p>
               </div>
             </div>
@@ -102,9 +99,8 @@ const About = () => {
                   Outdoor Advertising
                 </h2>
                 <p className="text-base text-gray-600 primary-font mt-2">
-                  Hoardings, Billboards, Bus Shelters, Metro Branding, Mobile
-                  Vans, City Cabs & Autos, and Traffic Signal Ads across Chennai
-                  & Tamil Nadu.
+                  Hoardings, Billboards, Bus Shelters, Metro Branding, Mobile Vans,
+                  City Cabs & Autos, and Traffic Signal Ads across Chennai & Tamil Nadu.
                 </p>
               </div>
             </div>
