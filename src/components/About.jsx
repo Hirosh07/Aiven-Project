@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import CtaButton from "./CtaButton";
 import img from "../img/about-img.svg";
-import { BsPeople } from "react-icons/bs";
+import { MdWeb } from "react-icons/md";
+import { AiOutlineLineChart } from "react-icons/ai";
+import { GiMegaphone } from "react-icons/gi";  // updated icon
 
 // aos
 import AOS from "aos";
@@ -9,9 +11,7 @@ import "aos/dist/aos.css";
 
 const About = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
+    AOS.init({ duration: 1200 });
   }, []);
 
   return (
@@ -43,7 +43,7 @@ const About = () => {
               Aiven Creatives
             </h1>
             <p className="text-lg mt-5 text-gray-600 primary-font leading-relaxed">
-              Aiven Creatives is a trusted advertising agency in Chennai,
+              Aiven Creatives is a trusted advertising agency in Chennai,
               offering complete branding and marketing solutions to elevate
               your brand’s presence and deliver impactful results.
             </p>
@@ -56,8 +56,8 @@ const About = () => {
               data-aos="zoom-in"
               className="flex flex-col lg:flex-row items-center gap-5"
             >
-              <div className="bg-orange-600 w-fit p-3 md:p-5 rounded text-white">
-                <BsPeople size={"28px"} />
+              <div className="bg-orange-600 p-4 md:p-5 rounded text-white flex items-center justify-center">
+                <MdWeb size={28} className="md:text-4xl" />
               </div>
               <div className="w-full">
                 <h2 className="text-[#7A6960] text-xl font-medium">
@@ -75,8 +75,8 @@ const About = () => {
               data-aos="zoom-in"
               className="flex flex-col lg:flex-row items-center gap-5"
             >
-              <div className="bg-orange-600 w-fit p-3 md:p-5 rounded text-white">
-                <BsPeople size={"28px"} />
+              <div className="bg-orange-600 p-4 md:p-5 rounded text-white flex items-center justify-center">
+                <AiOutlineLineChart size={28} className="md:text-4xl" />
               </div>
               <div className="w-full">
                 <h2 className="text-[#7A6960] text-xl font-medium">
@@ -94,8 +94,8 @@ const About = () => {
               data-aos="zoom-in"
               className="flex flex-col lg:flex-row items-center gap-5"
             >
-              <div className="bg-orange-600 w-fit p-3 md:p-5 rounded text-white">
-                <BsPeople size={"28px"} />
+              <div className="bg-orange-600 p-4 md:p-5 rounded text-white flex items-center justify-center">
+                <GiMegaphone size={28} className="md:text-4xl" />
               </div>
               <div className="w-full">
                 <h2 className="text-[#7A6960] text-xl font-medium">
@@ -104,7 +104,7 @@ const About = () => {
                 <p className="text-base text-gray-600 primary-font mt-2">
                   Hoardings, Billboards, Bus Shelters, Metro Branding, Mobile
                   Vans, City Cabs & Autos, and Traffic Signal Ads across Chennai
-                  & Tamil Nadu.
+                  & Tamil Nadu.
                 </p>
               </div>
             </div>
