@@ -43,16 +43,33 @@ const About = () => {
               Aiven Creatives
             </h1>
             <p className="text-lg mt-5 text-gray-600 primary-font leading-relaxed">
-              Aiven Creatives is one of the most trusted advertising agencies in
-              Chennai, offering end-to-end support in branding and digital
-              marketing solutions to elevate your brand’s presence. We
-              specialize in delivering impactful campaigns that drive real
-              results.
+              Aiven Creatives is a trusted advertising agency in Chennai,
+              offering complete branding and marketing solutions to elevate
+              your brand’s presence and deliver impactful results.
             </p>
           </div>
 
           {/* Services Section */}
           <div className="mt-8 space-y-6">
+            {/* Web & Creative Services */}
+            <div
+              data-aos="zoom-in"
+              className="flex flex-col lg:flex-row items-center gap-5"
+            >
+              <div className="bg-orange-600 w-fit p-3 md:p-5 rounded text-white">
+                <BsPeople size={"28px"} />
+              </div>
+              <div className="w-full">
+                <h2 className="text-[#7A6960] text-xl font-medium">
+                  Web & Creative Services
+                </h2>
+                <p className="text-base text-gray-600 primary-font mt-2">
+                  Website Development, Graphic & Logo Design, and Video Editing
+                  to craft a strong and memorable brand identity.
+                </p>
+              </div>
+            </div>
+
             {/* Digital Marketing */}
             <div
               data-aos="zoom-in"
@@ -66,9 +83,8 @@ const About = () => {
                   Digital Marketing
                 </h2>
                 <p className="text-base text-gray-600 primary-font mt-2">
-                  Social Media Marketing, SEO, Content & Email Marketing, PPC,
-                  Influencer Marketing, Website Development, Graphic & Logo
-                  Design, Video Editing.
+                  Social Media Marketing, SEO, PPC, Content & Email Marketing,
+                  and Influencer Campaigns to grow your online presence.
                 </p>
               </div>
             </div>
@@ -86,9 +102,9 @@ const About = () => {
                   Outdoor Advertising
                 </h2>
                 <p className="text-base text-gray-600 primary-font mt-2">
-                  Hoardings, Billboards, Bus Shelters, Mobile Vans, Metro Train
-                  Branding, Barricade Ads, City Cabs & Autos, Traffic Signal &
-                  Lamp Post Ads across Chennai & Tamil Nadu.
+                  Hoardings, Billboards, Bus Shelters, Metro Branding, Mobile
+                  Vans, City Cabs & Autos, and Traffic Signal Ads across Chennai
+                  & Tamil Nadu.
                 </p>
               </div>
             </div>
@@ -96,7 +112,7 @@ const About = () => {
 
           {/* Final CTA */}
           <div className="flex flex-col sm:flex-row items-center gap-10 mt-12">
-          <a href="#contact" className="">
+            <a href="#contact">
               <CtaButton name={"Get Started"} />
             </a>
           </div>

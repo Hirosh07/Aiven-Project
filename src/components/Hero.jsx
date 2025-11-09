@@ -53,7 +53,7 @@ const Hero = () => {
           Come with us to be a Brand
         </h1>
         <p className="text-gray-100 mt-5 text-xl primary-font relative z-10 drop-shadow-md">
-          Branding & Advertising Services in Chennai | Aiven Creatives.
+          Branding & Advertising Services in Chennai | Aiven Creatives
         </p>
         <div className="flex flex-col sm:flex-row items-center mb-12 lg:mb-0 lg:flex-row gap-10 mt-10">
           <a href="#contact" className="">
