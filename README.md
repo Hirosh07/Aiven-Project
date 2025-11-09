@@ -31,25 +31,5 @@ Welcome to the Digital Marketing Website Template repository! This project is a 
 - [Express](https://expressjs.com/)
 - [MongoDB](https://www.mongodb.com/) -->
 
-## Installation
 
-To get a local copy up and running, follow these simple steps:
-
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/KumarRahul01/Marketing-Website.git
-
-2. **Navigate to the project directory:**
-    ```sh
-    cd digital-marketing-website
-  
-3. **Install dependencies:**
-   ```sh
-   npm install
-
-4. **To run:**
-   ```sh
-   npm run dev
-
-Open your browser and go to http://localhost:5173/Marketing-Website/ to see the website in action.
 
