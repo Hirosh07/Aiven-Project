@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import CtaButton from "./CtaButton";
-import logo from "../img/assets/logo_AC.jpeg";
+import logo from "../img/assets/Log.png";
 
 const NavBar = () => {
   const [show, setShow] = useState(false);
@@ -44,12 +44,12 @@ const NavBar = () => {
       }`}
     >
       {/* Logo */}
-      <Link
-        to="/"
+      <a
+        href="/Marketing-Website/"
         className="lg:text-3xl text-2xl tracking-wide font-light flex items-center gap-2"
       >
         <img src={logo} alt="Logo" className="h-12 w-15 object-contain" />
-      </Link>
+      </a>
 
       {/* ✅ Desktop Menu */}
       <div className="lg:flex items-center justify-between lg:gap-14 hidden">

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import { HiOutlineChartPie } from "react-icons/hi2";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -90,8 +89,9 @@ const Services = () => {
   // The CSS for the animations is now a string within the component
   const animationStyles = `
     .slide-container {
-      display: flex;
-      flex-direction: column;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, minmax(280px, 1fr));
       gap: 1.25rem;
       animation-duration: 0.5s;
       animation-fill-mode: forwards;
@@ -99,7 +99,7 @@ const Services = () => {
 
     @media (min-width: 1024px) {
       .slide-container {
-        flex-direction: row;
+        grid-template-columns: repeat(3, minmax(320px, 1fr));
       }
     }
 
