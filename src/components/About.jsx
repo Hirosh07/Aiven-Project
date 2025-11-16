@@ -40,7 +40,7 @@ const About = () => {
               Aiven Creatives
             </h1>
             <p className="text-lg mt-5 text-gray-600 primary-font leading-relaxed">
-              Aiven Creatives is a trusted advertising agency in Chennai, offering
+              Aiven Creatives is a trusted advertising agency in Chennai, offering
               complete branding and marketing solutions to elevate your brand’s
               presence and deliver impactful results.
             </p>
@@ -100,7 +100,7 @@ const About = () => {
                 </h2>
                 <p className="text-base text-gray-600 primary-font mt-2">
                   Hoardings, Billboards, Bus Shelters, Metro Branding, Mobile Vans,
-                  City Cabs & Autos, and Traffic Signal Ads across Chennai & Tamil Nadu.
+                  City Cabs & Autos, and Traffic Signal Ads across Chennai & TamilNadu.
                 </p>
               </div>
             </div>
