@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../img/Dm.jpg";
+import image from "../img/DM.jpg";
 import Template from "./Template";
 import NavBar from "../components/NavBar";
 import Newsletter from "../components/Newsletter";
